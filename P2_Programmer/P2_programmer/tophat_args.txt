@@ -1,0 +1,8 @@
+-r 200
+-G /project/bf591/project_2/reference/annot/mm9.gtf
+--segment-length=20
+--segment-mismatches=1
+--no-novel-juncs
+-o P0_1_tophat
+-p 16
+/project/bf528/project_2/reference/mm9 P0_2_1.fastq.gz P0_2_2.fastq.gz

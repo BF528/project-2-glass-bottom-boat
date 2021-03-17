@@ -1,0 +1,2 @@
+data = read.table("C:/Users/b42na/Documents/BF528/genes.fpkm_tracking", header=T, sep="\t")
+barplot(data$FPKM>=0,names.arg = data$gene_short_name,main="Gene Expression - FPKM",ylab="log(FPKM)",ylim=c(100,10^-6),log="y",las=2,  offset=0.0001)

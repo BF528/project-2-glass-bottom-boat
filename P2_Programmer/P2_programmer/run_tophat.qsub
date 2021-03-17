@@ -1,0 +1,19 @@
+#!/bin/bash -l
+
+#$ -P bf528
+#$ -cwd
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+
+echo "Running job $JOB_ID"
+echo "Started: $(date +%F)"
+echo "Running in directory: $PWD"
+
+PATH1='/projectnb2/bf528/project_2/reference/'
+PATH2='/projectnb2/bf528/users/glass_bottom_boat/project_2/P2_programmer/'
+
+module load python2 samtools/0.1.19 bowtie2 boost tophat
+
+#tophat -p 16 -r 200 --segment-mismatches=1 --segment-length=20 --no-novel-juncs -G $PATH1'annot/mm9.gtf' -o P0_1_tophat $PATH1'mm9' $PATH2'P0_2_1.fastq' $PATH2'P0_2_2.fastq'  
+
+echo "Job finished: $(date +%F)"
