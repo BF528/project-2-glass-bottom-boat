@@ -12,3 +12,5 @@ Marina Natividad (Biologist)
 Data curator files inclide run_extract.qsub, P0_1_1_fastqc.html, and P0_1_2_fastqc.html. The run_extract.qsub file contains code for extracting FASTQ files, and the two html files are FastQC quality reports.
 
 Analyst_Role.R has code which takes differential genes with their names, FPKM values, log2 fold change, p_value, q_value and their significance from cuffdiff as input and gives the list of up and down regulated significant genes as output in .csv files. It also plots histogram of log2 fold change of all DEG and significant genes.
+
+biologist.R contains code for replication of O’Meara et al. (2015) Figure 1D of the datasets P0, P4, P7 and Ad. The second part results in a heatmap of the top 100 DE genes in the P4 vs Adult datasets.
