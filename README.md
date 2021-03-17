@@ -15,4 +15,4 @@ Analyst_Role.R has code which takes differential genes with their names, FPKM va
 
 biologist.R contains code for replication of O’Meara et al. (2015) Figure 1D of the datasets P0, P4, P7 and Ad. The second part results in a heatmap of the top 100 DE genes in the P4 vs Adult datasets.
 
-P2 contains several scripts; Table 1.xls (table of mapped reads), run_tophat.qsub (tophat batch file), run_cufflinks.qsu1b (cufflinks batch file), run_cuffdiff.qsub (cuffdiff batch file), P0_1_inner_distance.inner_distance_plot (code for figure 7), P0_1_genebody.geneBodyCoverage (code for figure 6), and cufflinkshist (code for figure 9)
+P2_programmer contains several scripts; Table 1.xls (table of mapped reads), run_tophat.qsub (tophat batch file), run_cufflinks.qsu1b (cufflinks batch file), run_cuffdiff.qsub (cuffdiff batch file), P0_1_inner_distance.inner_distance_plot (code for figure 7), P0_1_genebody.geneBodyCoverage (code for figure 6), and cufflinkshist (code for figure 9)
