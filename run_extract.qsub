@@ -1,0 +1,15 @@
+#$ -P bf528
+#$ -cwd
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+
+echo "Running job $JOB_ID"
+echo "Started: $(date +%F)"
+echo "Running in directory: $PWD"
+
+module load fastqc
+module load sratoolkit
+
+fastq-dump -I --split-files /projectnb/bf528/users/glass_bottom_boat/project_2/data_curator/P0_1.sra -O /projectnb/bf528/users/glass_bottom_boat/project_2/data_curator 
+
+echo "Job finished: $(date +%F)"
