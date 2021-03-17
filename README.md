@@ -10,4 +10,4 @@ Marina Natividad (Biologist)
 
 # Repository Contents
 
-Provide a brief description of each script/code file in this repo, what it does, and how to execute it
+Analyst_Role.R has code which takes differential genes with their names, FPKM values, log2 fold change, p_value, q_value and their significance from cuffdiff as input and gives the list of up and down regulated significant genes as output in .csv files. It also plots histogram of log2 fold change of all DEG and significant genes.
